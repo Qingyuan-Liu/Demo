@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Starter Page | Hyper - Responsive Bootstrap 4 Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
+    <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+    <link href="assets/css/vendor/simplemde.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+    <!-- Begin page -->
+    <div class="wrapper">
+        @@include('./partials/left-sidebar.html')
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+                @@include('./partials/topbar.html')
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <div class="page-title-right">
+                                    <!-- <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Pages</a></li>
+                                        <li class="breadcrumb-item active">Starter</li>
+                                    </ol> -->
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb bg-light-lighten p-2">
+                                            <li class="breadcrumb-item"><a href="#"><i class="uil-home-alt"></i>Program Progress</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Test Result</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                                <h4 class="page-title">Application Status</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- container -->
+                    <div class="alert alert-info" role="alert">
+                        <i class="dripicons-checkmark mr-2"></i> Your <strong>score</strong> is ready - check it out!
+                    </div>
+                    <br>
+                    <h5>Here is your Test Result <i class="uil-smile"></i>:</h5>
+                    <br>
+                    <div>
+                        <br>
+                        <input type="text" id="range_02" data-plugin="range-slider" data-min="100" data-max="1000" data-from="880" />
+                        <!-- content -->
+                        <br>
+                        <br>
+                        <div class="alert alert-success" role="alert">
+                            <h4 class="alert-heading">Congratulations!</h4>
+                            <br>
+                            <p>You've successfully passed the English Skill Evaluation and scored <strong>880</strong> out of <strong>1000</strong>.</p>
+                            <hr>
+                            <p class="mb-0">Your application has been sent to the queue of interview. We'll help you schedule the interview with employer</p>
+                        </div>
+                        <button type="button" class="btn btn-primary">Next</button> @@include('./partials/footer.html')
+
+                    </div>
+
+                    <!-- ============================================================== -->
+                    <!-- End Page content -->
+                    <!-- ============================================================== -->
+
+
+                </div>
+                <!-- END wrapper -->
+
+
+                @@include('./partials/right-sidebar.html')
+
+
+                <!-- bundle -->
+                <script src="assets/js/vendor.min.js"></script>
+                <script src="assets/js/app.min.js"></script>
+                <!-- SimpleMDE js -->
+                <script src="assets/js/vendor/simplemde.min.js"></script>
+                <!-- SimpleMDE demo -->
+                <script src="assets/js/pages/demo.simplemde.js"></script>
+                <!-- plugin js -->
+                <script src="assets/js/vendor/dropzone.min.js"></script>
+                <!-- init js -->
+                <script src="assets/js/ui/component.fileupload.js"></script>
+                <script src="assets/js/vendor/ion.rangeSlider.min.js"></script>
+                <script src="assets/js/ui/component.range-slider.js"></script>
+
+</body>
+
+</html>

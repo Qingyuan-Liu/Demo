@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Interview Progress</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- third party css -->
+    <link href="assets/css/vendor/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+    <!-- third party css end -->
+
+    <!-- App css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
+    <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+
+</head>
+
+<body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+    <!-- Begin page -->
+    <div class="wrapper">
+        @@include('./partials/left-sidebar.html')
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+                @@include('./partials/topbar.html')
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <div class="page-title-right">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb bg-light-lighten p-2">
+                                            <li class="breadcrumb-item"><a href="#"><i class="uil-home-alt"></i>Program Progress</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Interview Progress</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                                <h4 class="page-title">Interview Schedule</h4>
+                                <!-- <i class="uil-file-edit-alt"></i> -->
+                                <!-- <span class="h5"> Check the available interview date </p> -->
+                                <p class="text-muted">Please Select a Date from calendar. Only the available date could be selected.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
+                            <div class="card card-body">
+                                <h5 class="card-title">Wed, March 13th</h5>
+                                <p class="card-text">3:30pm
+                                </p>
+                                <div class="text-center p-3">
+                                    <button type="button" class="btn btn-success btn-sm" id="toastr-three">Click me</button>
+                                </div>
+                            </div>
+                            <!-- end card-->
+                        </div>
+                        <!-- end col-->
+                        <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
+                            <div class="card card-body">
+                                <h5 class="card-title">Fri, March 15th</h5>
+                                <p class="card-text">4:30pm
+                                </p>
+                                <div class="text-center p-3">
+                                    <button type="button" class="btn btn-success btn-sm" id="toastr-three">Click me</button>
+                                </div>
+                            </div>
+                            <!-- end card-->
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
+                            <div class="card card-body">
+                                <h5 class="card-title">Fri, March 15th</h5>
+                                <p class="card-text">5:30pm
+                                </p>
+                                <div class="text-center p-3">
+                                    <button type="button" class="btn btn-success btn-sm" id="toastr-three" disabled>Click me</button>
+                                </div>
+                            </div>
+                            <!-- end card-->
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
+                            <div class="card card-body">
+                                <h5 class="card-title">Fri, March 17th</h5>
+                                <p class="card-text">2:00pm
+                                </p>
+                                <div class="text-center p-3">
+                                    <button type="button" class="btn btn-success btn-sm" id="toastr-three">Click me</button>
+                                </div>
+                            </div>
+                            <!-- end card-->
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
+                            <div class="card card-body">
+                                <h5 class="card-title">Fri, March 20th</h5>
+                                <p class="card-text">3:00pm
+                                </p>
+                                <div class="text-center p-3">
+                                    <button type="button" class="btn btn-success btn-sm" id="toastr-three" disabled>Click me</button>
+                                </div>
+                            </div>
+                            <!-- end card-->
+                        </div>
+                        <div class="col-sm-2 col-xs-2 col-md-3 col-lg-2">
+                            <div class="card card-body">
+                                <h5 class="card-title">Fri, March 25th</h5>
+                                <p class="card-text">4:00pm
+                                </p>
+                                <div class="text-center p-3">
+                                    <button type="button" class="btn btn-success btn-sm" id="toastr-three">Click me</button>
+                                </div>
+                            </div>
+                            <!-- end card-->
+                        </div>
+                        <!-- end col-->
+
+                    </div>
+                    <a href="interview_confirm.html"><button type="button" class="btn btn-outline-primary" style="display:none" id="next">Next</button></a>
+                </div>
+                <!-- container -->
+
+
+            </div>
+            <!-- content -->
+
+            @@include('./partials/footer.html')
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+
+    </div>
+    <!-- END wrapper -->
+
+
+    @@include('./partials/right-sidebar.html')
+
+    <!-- <script>
+        $.NotificationApp.send("Title", "Your awesome message text", "Position", "Background color", "Icon")
+    </script> -->
+
+    <!-- bundle -->
+    <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+
+    <!-- third party js -->
+    <script src="assets/js/vendor/jquery-ui.min.js"></script>
+    <script src="assets/js/vendor/fullcalendar.min.js"></script>
+    <!-- third party js ends -->
+
+    <!-- demo js -->
+    <script src="assets/js/pages/demo.toastr.js"></script>
+    <!-- end demo js-->
+
+</body>
+
+</html>

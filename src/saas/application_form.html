@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Application Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
+    <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+    <link href="assets/css/vendor/simplemde.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+    <!-- Begin page -->
+    <div class="wrapper">
+        @@include('./partials/left-sidebar.html')
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+                @@include('./partials/topbar.html')
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <div class="page-title-right">
+                                    <!-- <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Pages</a></li>
+                                        <li class="breadcrumb-item active">Starter</li>
+                                    </ol> -->
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb bg-light-lighten p-2">
+                                            <li class="breadcrumb-item"><a href="#"><i class="uil-home-alt"></i>Program Application</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Personal Information</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                                <h4 class="page-title">Program Application</h4>
+                            </div>
+                            <br>
+                            <i class="uil-file-edit-alt"></i>
+                            <span class="h5"> Personal Information </p>
+                            <br>
+                        </div>
+
+                    </div>
+
+                    <!-- container -->
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group mb-3">
+                            <label for="validationCustom01">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="validationCustom02">Last name</label>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="validationCustom05">Age</label>
+                            <input type="text" class="form-control" id="validationCustom05" placeholder="Age" required>
+                            <div class="invalid-feedback">
+                                Please provide an age.
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="validationCustom05">Gender</label>
+                            <select class="form-control select2" data-toggle="select2">
+                                <option>Select</option>
+                                    <option value="female">female</option>
+                                    <option value="male">male</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a gender.
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="validationCustom03">Address</label>
+                            <input type="text" class="form-control" id="validationCustom03" placeholder="Address" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid address.
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="validationCustom04">Email</label>
+                            <input type="text" class="form-control" id="validationCustom04" placeholder="Email" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid Email.
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="validationCustom05">Phone</label>
+                            <input type="text" class="form-control" id="validationCustom05" placeholder="Phone" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid phone number.
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="validationCustom05">Zip code</label>
+                            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip code" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="validationCustom05">Expected Salary</label>
+                            <select class="form-control select2" data-toggle="select2">
+                                <option>Select</option>
+                                    <option value="hundred">$100</option>
+                                    <option value="thousand">$1000</option>
+                                    <option value="million">$10000</option>
+                            </select>
+                        </div>
+
+                        <!-- File Upload -->
+                        <div class="form-group mb-3">
+                            <label for="validationCustom05">Resume</label>
+                            <input type="file" id="example-fileinput" class="form-control-file">
+                        </div>
+                        <div class="form-group mb-3">
+                            <div class="custom-control custom-checkbox form-check">
+                                <input type="checkbox" class="custom-control-input" id="invalidCheck" required>
+                                <label class="custom-control-label" for="invalidCheck">Agree to terms
+                                and conditions</label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </form>
+                </div>
+
+            </div>
+            <!-- content -->
+
+            @@include('./partials/footer.html')
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+
+    </div>
+    <!-- END wrapper -->
+
+
+    @@include('./partials/right-sidebar.html')
+
+
+    <!-- bundle -->
+    <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <!-- SimpleMDE js -->
+    <script src="assets/js/vendor/simplemde.min.js"></script>
+    <!-- SimpleMDE demo -->
+    <script src="assets/js/pages/demo.simplemde.js"></script>
+    <!-- plugin js -->
+    <script src="assets/js/vendor/dropzone.min.js"></script>
+    <!-- init js -->
+    <script src="assets/js/ui/component.fileupload.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Application Status</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" /> -->
+    <meta content="Coderthemes" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
+    <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+    <link href="assets/css/vendor/simplemde.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+    <!-- Begin page -->
+    <div class="wrapper">
+        @@include('./partials/left-sidebar.html')
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+                @@include('./partials/topbar.html')
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <div class="page-title-right">
+                                    <!-- <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Pages</a></li>
+                                        <li class="breadcrumb-item active">Starter</li>
+                                    </ol> -->
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb bg-light-lighten p-2">
+                                            <li class="breadcrumb-item"><a href="#"><i class="uil-home-alt"></i>Application Status</a></li>
+                                            <!-- <li class="breadcrumb-item active" aria-current="page">Application Form</li> -->
+                                        </ol>
+                                    </nav>
+                                </div>
+                                <h4 class="page-title">Application Status</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7 col-md-10 col-sm-11">
+
+                            <div class="horizontal-steps mt-4 mb-4 pb-5">
+                                <div class="horizontal-steps-content">
+                                    <div class="step-item">
+                                        <a href="application_form.html" target="_blank" class="side-nav-link">
+                                            <span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="20/08/2018 07:24 PM"> Application Start </span>
+                                        </a>
+                                    </div>
+                                    <div class="step-item current">
+                                        <a href="application_fee.html" target="_blank" class="side-nav-link">
+                                            <span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="21/08/2018 11:32 AM"> Application Fee Payment </span>
+                                        </a>
+                                    </div>
+                                    <div class="step-item">
+                                        <a href="https://go.docusign.com/trial/productshot/?gclid=EAIaIQobChMIi_-XzofB6gIVUvDACh2rLA7KEAAYASAAEgJJTfD_BwE&utm_term=esignature%20service&utm_source=google&utm_medium=cpc&elqCampaignId=3826&utm_content=domestic_US&utm_campaign=esign_secondary&rflag=1"
+                                            target="_blank" class="side-nav-link">
+                                            <span> E-Sign Contract </span>
+                                        </a>
+                                    </div>
+                                    <div class="step-item">
+                                        <a href="application_fee.html" target="_blank" class="side-nav-link">
+                                            <span> Program Fee Payment </span>
+                                        </a>
+                                    </div>
+                                    <div class="step-item">
+                                        <span>Ready to Go</span>
+                                    </div>
+                                </div>
+
+                                <div class="process-line" style="width: 25%;"></div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+
+                    </div>
+                    <!-- container -->
+                    <div class="card ribbon-box">
+                        <div class="card ribbon-box">
+                            <div class="card-body">
+                                <div class="ribbon ribbon-info float-right"><i class="mdi mdi-access-point mr-1"></i></div>
+                                <h5 class="text-info float-left mt-0"> Application Status </h5>
+                                <div class="ribbon-content">
+                                    Please fill out the Application form first.<br> <br>After you pay the application fee, we'll help you schedule the interview with employer.
+                                </div>
+                                <br>
+                                <a href="application_fee.html" class="side-nav-link">
+                                    <button type="button" class="btn btn-info">Start</button>
+                                </a>
+                            </div>
+                            <!-- end card-body -->
+                        </div>
+                        <!-- end card-->
+                        <!-- end card-body -->
+                    </div>
+                    <!-- end card-->
+                    <!-- content -->
+
+                    @@include('./partials/footer.html')
+
+                </div>
+
+                <!-- ============================================================== -->
+                <!-- End Page content -->
+                <!-- ============================================================== -->
+
+
+            </div>
+            <!-- END wrapper -->
+
+
+            @@include('./partials/right-sidebar.html')
+
+
+            <!-- bundle -->
+            <script src="assets/js/vendor.min.js"></script>
+            <script src="assets/js/app.min.js"></script>
+            <!-- SimpleMDE js -->
+            <script src="assets/js/vendor/simplemde.min.js"></script>
+            <!-- SimpleMDE demo -->
+            <script src="assets/js/pages/demo.simplemde.js"></script>
+            <!-- plugin js -->
+            <script src="assets/js/vendor/dropzone.min.js"></script>
+            <!-- init js -->
+            <script src="assets/js/ui/component.fileupload.js"></script>
+</body>
+
+</html>

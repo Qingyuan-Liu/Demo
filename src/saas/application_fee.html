@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Application Fee Payment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
+    <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+    <link href="assets/css/vendor/simplemde.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+    <!-- Begin page -->
+    <div class="wrapper">
+        @@include('./partials/left-sidebar.html')
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+                @@include('./partials/topbar.html')
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <div class="page-title-right">
+                                    <!-- <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Pages</a></li>
+                                        <li class="breadcrumb-item active">Starter</li>
+                                    </ol> -->
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb bg-light-lighten p-2">
+                                            <li class="breadcrumb-item"><a href="#"><i class="uil-home-alt"></i>Program Application</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Application Fee Payment</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                                <h4 class="page-title">Application Status</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7 col-md-10 col-sm-11">
+
+                            <div class="horizontal-steps mt-4 mb-4 pb-5">
+                                <div class="horizontal-steps-content">
+                                    <div class="step-item">
+                                        <span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="20/08/2018 07:24 PM">Information Received</span>
+                                    </div>
+                                    <div class="step-item current">
+                                        <span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="21/08/2018 11:32 AM">E-sign Contract Complete</span>
+                                    </div>
+                                    <div class="step-item">
+                                        <span>Transaction Complete</span>
+                                    </div>
+                                </div>
+
+                                <div class="process-line" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+
+                    </div>
+                    <!-- container -->
+                    <!-- Payment Content-->
+                    <div class="tab-pane" id="payment-information">
+                        <div class="row">
+
+                            <div class="col-lg-8">
+                                <h4 class="mt-2">Payment Selection</h4>
+
+                                <p class="text-muted mb-4">Fill the form below in order to send you the order's invoice.</p>
+
+                                <!-- Pay with Paypal box-->
+                                <div class="border p-3 mb-3 rounded">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="BillingOptRadio2" name="billingOptions" class="custom-control-input">
+                                                <label class="custom-control-label font-16 font-weight-bold" for="BillingOptRadio2">Pay with Paypal</label>
+                                            </div>
+                                            <p class="mb-0 pl-3 pt-1">You will be redirected to PayPal website to complete your purchase securely.</p>
+                                        </div>
+                                        <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
+                                            <img src="assets/images/payments/paypal.png" height="25" alt="paypal-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end Pay with Paypal box-->
+
+                                <!-- Credit/Debit Card box-->
+                                <div class="border p-3 mb-3 rounded">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="BillingOptRadio1" name="billingOptions" class="custom-control-input" checked>
+                                                <label class="custom-control-label font-16 font-weight-bold" for="BillingOptRadio1">Credit / Debit Card</label>
+                                            </div>
+                                            <p class="mb-0 pl-3 pt-1">Safe money transfer using your bank account. We support Mastercard, Visa, Discover and Stripe.</p>
+                                        </div>
+                                        <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
+                                            <img src="assets/images/payments/master.png" height="24" alt="master-card-img">
+                                            <img src="assets/images/payments/discover.png" height="24" alt="discover-card-img">
+                                            <img src="assets/images/payments/visa.png" height="24" alt="visa-card-img">
+                                            <img src="assets/images/payments/stripe.png" height="24" alt="stripe-card-img">
+                                        </div>
+                                    </div>
+                                    <!-- end row -->
+                                    <div class="row mt-4">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="card-number">Card Number</label>
+                                                <input type="text" id="card-number" class="form-control" data-toggle="input-mask" data-mask-format="0000 0000 0000 0000" placeholder="4242 4242 4242 4242">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end row -->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="card-name-on">Name on card</label>
+                                                <input type="text" id="card-name-on" class="form-control" placeholder="Master Shreyu">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="card-expiry-date">Expiry date</label>
+                                                <input type="text" id="card-expiry-date" class="form-control" data-toggle="input-mask" data-mask-format="00/00" placeholder="MM/YY">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="card-cvv">CVV code</label>
+                                                <input type="text" id="card-cvv" class="form-control" data-toggle="input-mask" data-mask-format="000" placeholder="012">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end row -->
+                                </div>
+                                <!-- end Credit/Debit Card box-->
+
+                                <!-- Pay with Payoneer box-->
+                                <div class="border p-3 mb-3 rounded">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="BillingOptRadio3" name="billingOptions" class="custom-control-input">
+                                                <label class="custom-control-label font-16 font-weight-bold" for="BillingOptRadio3">Pay with Payoneer</label>
+                                            </div>
+                                            <p class="mb-0 pl-3 pt-1">You will be redirected to Payoneer website to complete your purchase securely.</p>
+                                        </div>
+                                        <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
+                                            <img src="assets/images/payments/payoneer.png" height="30" alt="paypal-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end Pay with Payoneer box-->
+
+                                <!-- Cash on Delivery box-->
+                                <div class="border p-3 mb-3 rounded">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="BillingOptRadio4" name="billingOptions" class="custom-control-input">
+                                                <label class="custom-control-label font-16 font-weight-bold" for="BillingOptRadio4">Cash on Delivery</label>
+                                            </div>
+                                            <p class="mb-0 pl-3 pt-1">Pay with cash when your order is delivered.</p>
+                                        </div>
+                                        <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
+                                            <img src="assets/images/payments/cod.png" height="22" alt="paypal-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end Cash on Delivery box-->
+
+                                <div class="row mt-4">
+                                    <div class="col-sm-6">
+                                        <a href="apps-ecommerce-shopping-cart.html" class="btn text-muted d-none d-sm-inline-block btn-link font-weight-semibold">
+                                            <i class="mdi mdi-arrow-left"></i> Back to Application </a>
+                                    </div>
+                                    <!-- end col -->
+                                    <div class="col-sm-6">
+                                        <div class="text-sm-right">
+                                            <a href="apps-ecommerce-checkout.html" class="btn btn-danger">
+                                                <i class="mdi mdi-cash-multiple mr-1"></i> Complete Order </a>
+                                        </div>
+                                    </div>
+                                    <!-- end col -->
+                                </div>
+                                <!-- end row-->
+
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-4">
+                                <div class="border p-3 mt-4 mt-lg-0 rounded">
+                                    <h4 class="header-title mb-3">Order Summary</h4>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-centered mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <!-- <img src="assets/images/products/product-1.jpg" alt="contact-img" title="contact-img" class="rounded mr-2" height="48" /> -->
+                                                        <p class="m-0 d-inline-block align-middle">
+                                                            <a href="project-details.html" class="text-body font-weight-semibold">ITP Internship Project</a>
+                                                            <br>
+                                                            <small>1 x $1480.66</small>
+                                                        </p>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        $1480.66
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <!-- <img src="assets/images/products/product-2.jpg" alt="contact-img" title="contact-img" class="rounded mr-2" height="48" /> -->
+                                                        <p class="m-0 d-inline-block align-middle">
+                                                            <a href="apps-ecommerce-products-details.html" class="text-body font-weight-semibold">Insurance</a>
+                                                            <br>
+                                                            <small>2 x $99.00</small>
+                                                        </p>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        $198.00
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <!-- <img src="assets/images/products/product-3.jpg" alt="contact-img" title="contact-img" class="rounded mr-2" height="48" /> -->
+                                                        <p class="m-0 d-inline-block align-middle">
+                                                            <a href="apps-ecommerce-products-details.html" class="text-body font-weight-semibold">Visa Application Fee</a>
+                                                            <br>
+                                                            <small>1 x $129.99</small>
+                                                        </p>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        $129.99
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-right">
+                                                    <td>
+                                                        <h6 class="m-0">Sub Total:</h6>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        $1808.65
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-right">
+                                                    <td>
+                                                        <h5 class="m-0">Total:</h5>
+                                                    </td>
+                                                    <td class="text-right font-weight-semibold">
+                                                        $1808.65
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- end table-responsive -->
+                                </div>
+                                <!-- end .border-->
+
+                            </div>
+                            <!-- end col --
+                            <!-- content -->
+
+                            @@include('./partials/footer.html')
+
+                        </div>
+
+                        <!-- ============================================================== -->
+                        <!-- End Page content -->
+                        <!-- ============================================================== -->
+
+
+                    </div>
+                    <!-- END wrapper -->
+
+
+                    @@include('./partials/right-sidebar.html')
+
+
+                    <!-- bundle -->
+                    <script src="assets/js/vendor.min.js"></script>
+                    <script src="assets/js/app.min.js"></script>
+                    <!-- SimpleMDE js -->
+                    <script src="assets/js/vendor/simplemde.min.js"></script>
+                    <!-- SimpleMDE demo -->
+                    <script src="assets/js/pages/demo.simplemde.js"></script>
+                    <!-- plugin js -->
+                    <script src="assets/js/vendor/dropzone.min.js"></script>
+                    <!-- init js -->
+                    <script src="assets/js/ui/component.fileupload.js"></script>
+</body>
+
+</html>
